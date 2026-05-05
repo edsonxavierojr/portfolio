@@ -1,0 +1,17 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.glass { 
+    background: rgba(15, 23, 42, 0.8); 
+    backdrop-filter: blur(12px); 
+}
+
+/* Você pode adicionar estilos fixos aqui no futuro, como animações personalizadas ou ajustes de scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4f46e5; /* Cor indigo-600 do Tailwind */
+    border-radius: 10px;
+}
