@@ -7,28 +7,42 @@
     <meta name="description" content="Detalhes do Projeto Lixo Auto-Reciclável - Case Study">
     <title>Self Recyclable Trash Can | Cold Tech Case Study</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body class="bg-[#111827] text-[#d1d5db] antialiased">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass border-b border-gray-700">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center">
+            
+            <div class="flex items-center gap-2 shrink-0">
                 <i class="fas fa-microchip text-[#22d3ee] text-xl"></i>
                 <span class="text-white font-bold tracking-tight hidden md:inline uppercase text-sm">System Case Study</span>
             </div>
 
-            <div class="flex items-center space-x-6 text-sm font-medium">
+            <div class="flex-1 flex justify-center hidden lg:flex">
+                <a href="https://github.com/edsonxavierojr/Self-Recyclable-Trash-Can" 
+                target="_blank" 
+                class="flex items-center gap-2 px-4 py-1.5 bg-[#111827] border border-gray-700 rounded-full hover:border-[#22d3ee] transition-all text-[#d1d5db] hover:text-[#22d3ee] text-xs font-semibold group">
+                    <i class="fa-brands fa-github text-lg group-hover:scale-110 transition-transform"></i>
+                    <span>See in GitHub</span>
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-6 text-sm font-medium shrink-0">
                 <a href="../../index.html"
                     class="flex items-center gap-2 text-[#d1d5db] hover:text-[#22d3ee] transition-colors">
                     <i class="fas fa-arrow-left"></i> Back
                 </a>
-                <span class="text-gray-700">|</span>
-                <div class="space-x-4 hidden sm:flex">
+                <span class="text-gray-700 hidden sm:inline">|</span>
+                <div class="space-x-4 hidden sm:flex text-[#d1d5db]">
                     <a href="#hero" class="hover:text-[#22d3ee] transition-colors">Home</a>
                     <a href="#overview" class="hover:text-[#22d3ee] transition-colors">Overview</a>
                     <a href="#demo" class="hover:text-[#22d3ee] transition-colors">Media</a>
@@ -36,6 +50,7 @@
                     <a href="#results" class="hover:text-[#22d3ee] transition-colors">Results</a>
                 </div>
             </div>
+            
         </div>
     </nav>
 
@@ -48,7 +63,7 @@
                 Computer Sciences • Sustainable Group
             </span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
-                Self Recyclable <span class="text-[#22d3ee]">Trash Can</span>
+                Self Recyclable Trash Can
             </h1>
             <p class="text-lg md:text-xl text-[#d1d5db] mb-10 leading-relaxed max-w-2xl mx-auto">
                 An intelligent prototype designed for automatic identification and sorting of recyclables using low-latency sensors and Arduino logic.
@@ -160,33 +175,47 @@
         </div>
     </section>
 
-    <!-- Methodology Section -->
     <section id="methodology" class="py-24 px-6 border-t border-gray-800">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-3xl font-bold text-white mb-16 text-center">Development Workflow</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 
                 <div class="p-8 bg-[#1f2937]/50 rounded-2xl border border-gray-700 relative group overflow-hidden">
-                    <div class="text-5xl font-black text-gray-800/30 absolute top-4 right-4 group-hover:text-[#22d3ee]/10 transition-colors">01</div>
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest">Ideation & Pivot</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed">
-                        Initially planned with AI via camera, the project pivoted to <strong>TCS230 Color Sensors</strong> to ensure technical feasibility, lower costs, and near-instant response times.
+                    <div class="text-5xl font-black text-gray-800/30 absolute top-6 right-6 group-hover:text-[#22d3ee]/10 transition-colors pointer-events-none">01</div>
+                    
+                    <div class="w-12 h-12 bg-[#22d3ee]/10 border border-[#22d3ee]/20 rounded-xl flex items-center justify-center text-[#22d3ee] mb-6 relative z-10">
+                        <i class="fas fa-lightbulb text-xl"></i>
+                    </div>
+
+                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Ideation & Pivot</h3>
+                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                        Initially planned with AI via camera, the project pivoted to <strong>TCS230 Color Sensors</strong> to ensure technical feasibility and near-instant response times.
                     </p>
                 </div>
 
                 <div class="p-8 bg-[#1f2937]/50 rounded-2xl border border-gray-700 relative group overflow-hidden">
-                    <div class="text-5xl font-black text-gray-800/30 absolute top-4 right-4 group-hover:text-[#22d3ee]/10 transition-colors">02</div>
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest">Mechanical Structure</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed">
-                        Development of a <strong>gravity-assisted inclined ramp</strong>. This design ensures consistent material positioning for accurate light-frequency readings.
+                    <div class="text-5xl font-black text-gray-800/30 absolute top-6 right-6 group-hover:text-[#22d3ee]/10 transition-colors pointer-events-none">02</div>
+                    
+                    <div class="w-12 h-12 bg-[#22d3ee]/10 border border-[#22d3ee]/20 rounded-xl flex items-center justify-center text-[#22d3ee] mb-6 relative z-10">
+                        <i class="fas fa-drafting-compass text-xl"></i>
+                    </div>
+
+                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Mechanical Structure</h3>
+                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                        Development of a <strong>gravity-assisted inclined ramp</strong>. This design ensures consistent material positioning for accurate readings.
                     </p>
                 </div>
 
                 <div class="p-8 bg-[#1f2937]/50 rounded-2xl border border-gray-700 relative group overflow-hidden">
-                    <div class="text-5xl font-black text-gray-800/30 absolute top-4 right-4 group-hover:text-[#22d3ee]/10 transition-colors">03</div>
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest">Logic & Sorting</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed">
-                        The system maps RGB values (e.g., Yellow for Metal). Arduino then triggers <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input.
+                    <div class="text-5xl font-black text-gray-800/30 absolute top-6 right-6 group-hover:text-[#22d3ee]/10 transition-colors pointer-events-none">03</div>
+                    
+                    <div class="w-12 h-12 bg-[#22d3ee]/10 border border-[#22d3ee]/20 rounded-xl flex items-center justify-center text-[#22d3ee] mb-6 relative z-10">
+                        <i class="fas fa-microchip text-xl"></i>
+                    </div>
+
+                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Logic & Sorting</h3>
+                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                        The system maps RGB values. Arduino then triggers <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input.
                     </p>
                 </div>
 
@@ -223,7 +252,7 @@
                         <div>
                             <h4 class="text-white font-bold text-lg mb-2">Municipal & Social Integration</h4>
                             <p class="text-[#d1d5db] leading-relaxed text-sm">
-                                A gamified proposal where neighborhoods reaching recycling goals trigger social rewards, such as **wheelchair donations** or community cultural events supported by local partners.
+                                A gamified proposal where neighborhoods reaching recycling goals trigger social rewards, such as wheelchair donations or community cultural events supported by local partners.
                             </p>
                         </div>
                     </div>
