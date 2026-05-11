@@ -5,7 +5,7 @@
 Este repositório contém o código-fonte do meu portfólio profissional, focado em demonstrar competências em engenharia de software, arquitetura de sistemas e integração com hardware. O projeto utiliza uma estética **Cold Tech** para apresentar soluções de alto desempenho e otimização técnica.
 
 ## 🛠️ Tecnologias & Ferramentas
-* **Linguagens:** Java, C++, SQL.
+* **Linguagens:** C++, SQL.
 * **Mobile:** Android Studio & SDK Nativo.
 * **Ambiente:** Docker, WSL & Linux para workflows de alta performance.
 * **Arquitetura:** Modelagem UML e padrões de design CRUD.
