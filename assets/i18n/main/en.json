@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "logo": "My Portfolio",
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "hero": {
+    "status": "Available for opportunities",
+    "title": "Hi, <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-blue-400\">Edson Xavier</span> here.",
+    "description": "Computer Science student dedicated to software engineering, with expertise in Java, Android Studio, and database management.",
+    "btn_work": "View My Work",
+    "btn_contact": "Let's Talk"
+  },
+  "projects": {
+    "title": "Projects",
+    "trashcan": {
+      "title": "Self-Recyclable Trash Can",
+      "description": "An Arduino-based prototype that automates the identification and sorting of recyclables through color sensors.",
+      "tags": {
+        "arduino": "Arduino",
+        "cpp": "C++ / Wiring",
+        "sensors": "Sensor (Color/IR)",
+        "iot": "IoT (Internet of Things)",
+        "embedded": "Embedded Systems",
+        "automation": "Automation"
+      },
+      "link": "View Project"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am a Computer Science student at <span class=\"text-[#22d3ee] font-semibold\">UniFAJ</span>, currently focused on building a strong foundational base to kickstart my professional career. I have been concentrating my studies on the <span class=\"text-white font-semibold\">Java ecosystem</span>, developing academic projects that involve backend logic and relational databases, always aiming to apply standards like <span class=\"text-white font-semibold\">UML modeling</span>.",
+    "p2": "In mobile development, I am exploring the capabilities of <span class=\"text-[#22d3ee] font-semibold\">Native Android</span>. Through Android Studio, I strive to understand application lifecycles and the importance of creating functional interfaces combined with organized code.",
+    "p3": "Beyond my coursework, I dedicate time to learning about infrastructure and productivity by configuring environments with <span class=\"text-white font-semibold\">Docker and WSL</span>. My goal is to find an opportunity where I can apply this initial technical knowledge and grow alongside a software engineering team."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "footer_built": "Built with Tailwind CSS & Lucide."
+  }
+}
