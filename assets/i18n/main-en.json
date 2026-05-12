@@ -3,7 +3,7 @@
     "logo": "My Portfolio",
     "home": "Home",
     "projects": "Projects",
-    "about": "About Me",
+    "about": "About me",
     "contact": "Contact"
   },
   "hero": {
@@ -16,7 +16,7 @@
   "projects": {
     "title": "Projects",
     "trashcan": {
-      "title": "Self-Recyclable Trash Can",
+      "title": "Self Recyclable Trash Can",
       "description": "An Arduino-based prototype that automates the identification and sorting of recyclables through color sensors.",
       "tags": {
         "arduino": "Arduino",

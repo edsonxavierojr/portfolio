@@ -23,7 +23,7 @@
   "overview": {
     "title": "Problem & Tech Solution", 
     "p1": "Solid waste production is constantly growing. Despite awareness campaigns, the difficulty of proper sorting results in the waste of recyclable materials and increases environmental impact.",
-    "p2": "The core challenge was to replace complex computer vision with an efficient, cost-effective hardware solution. This system utilizes light-frequency analysis to distinguish materials, making the process practical and preventing common disposal errors.",
+    "p2": "The core challenge was to replace complex computer vision with an efficient, cost-effective hardware solution. This system utilizes <strong>light-frequency analysis</strong> to distinguish materials, making the process practical and preventing common disposal errors.",
     "p3": "By focusing on color-coded waste streams, we achieved a response time of less than 500ms for material categorization.",
     "objectives": {
       "title": "Core Objectives",
@@ -52,7 +52,7 @@
       "step2_title": "Mechanical Structure",
       "step2_desc": "Development of a <strong>gravity-assisted inclined ramp</strong>. This design ensures consistent material positioning for accurate readings.",
       "step3_title": "Logic & Sorting",
-      "step3_desc": "The system maps RGB values. Arduino then triggers strong <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input."
+      "step3_desc": "The system maps RGB values. Arduino then triggers <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input."
     }
   },
   "results": {
@@ -62,8 +62,8 @@
       "software_desc": "Implementation of a real-time system that records every item processed (metals, plastics), allowing precise monitoring of recycling efficiency via Arduino serial/data logs.",
       "social_title": "Municipal & Social Integration",
       "social_desc": "A gamified proposal where neighborhoods reaching recycling goals trigger social rewards, such as wheelchair donations or community cultural events supported by local partners.",
-      "scale_title": "Scalability and Future Vision",
-      "java_title": "C++-based Dashboard",
+      "scale_title": "Scalability & Future Vision",
+      "java_title": "C++ based Dashboard",
       "java_desc": "Developing a robust desktop dashboard in C++ to monitor city-wide waste distribution and sensor health.",
       "mobile_title": "Mobile App & Bluetooth",
       "mobile_desc": "Integration with a dedicated Android app for citizens to track their \"Environmental Score\" via Bluetooth/WiFi.",
@@ -72,6 +72,6 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 • Developed for the Academic Report of Computer Science."
+    "copyright": "© 2024 • Developed for the Computer Science Academic Report."
   }
 }

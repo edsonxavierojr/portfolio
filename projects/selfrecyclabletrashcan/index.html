@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Detalhes do Projeto Lixo Auto-Reciclável - Case Study">
     <title>Self Recyclable Trash Can | Case Study</title>
+    <script src="../../assets/js/i18n.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -24,7 +25,7 @@
             
             <div class="flex items-center gap-2 shrink-0">
                 <i class="fas fa-microchip text-[#22d3ee] text-xl"></i>
-                <span class="text-white font-bold tracking-tight hidden md:inline uppercase text-sm">System Case Study</span>
+                <span data-i18n="nav.system_case" class="text-white font-bold tracking-tight hidden md:inline uppercase text-sm">System Case Study</span>
             </div>
 
             <div class="flex-1 flex justify-center hidden lg:flex">
@@ -32,22 +33,23 @@
                 target="_blank" 
                 class="flex items-center gap-2 px-4 py-1.5 bg-[#111827] border border-gray-700 rounded-full hover:border-[#22d3ee] transition-all text-[#d1d5db] hover:text-[#22d3ee] text-xs font-semibold group">
                     <i class="fa-brands fa-github text-lg group-hover:scale-110 transition-transform"></i>
-                    <span>See in GitHub</span>
+                    <span data-i18n="nav.see_github">See in GitHub</span>
                 </a>
             </div>
 
             <div class="flex items-center space-x-6 text-sm font-medium shrink-0">
                 <a href="../../index.html"
                     class="flex items-center gap-2 text-[#d1d5db] hover:text-[#22d3ee] transition-colors">
-                    <i class="fas fa-arrow-left"></i> Back
+                    <i class="fas fa-arrow-left"></i> 
+                    <span data-i18n="nav.back">Back</span>
                 </a>
                 <span class="text-gray-700 hidden sm:inline">|</span>
                 <div class="space-x-4 hidden sm:flex text-[#d1d5db]">
-                    <a href="#hero" class="hover:text-[#22d3ee] transition-colors">Home</a>
-                    <a href="#overview" class="hover:text-[#22d3ee] transition-colors">Overview</a>
-                    <a href="#demo" class="hover:text-[#22d3ee] transition-colors">Media</a>
-                    <a href="#methodology" class="hover:text-[#22d3ee] transition-colors">Methodology</a>
-                    <a href="#results" class="hover:text-[#22d3ee] transition-colors">Results</a>
+                    <a href="#hero" data-i18n="nav.home" class="hover:text-[#22d3ee] transition-colors">Home</a>
+                    <a href="#overview" data-i18n="nav.overview" class="hover:text-[#22d3ee] transition-colors">Overview</a>
+                    <a href="#demo" data-i18n="nav.media" class="hover:text-[#22d3ee] transition-colors">Media</a>
+                    <a href="#methodology" data-i18n="nav.methodology" class="hover:text-[#22d3ee] transition-colors">Methodology</a>
+                    <a href="#results" data-i18n="nav.results" class="hover:text-[#22d3ee] transition-colors">Results</a>
                 </div>
             </div>
             
@@ -58,45 +60,53 @@
     <header id="hero"
         class="min-h-screen flex flex-col items-center justify-center pt-20 px-6 border-b border-gray-800">
         <div class="max-w-4xl mx-auto text-center">
-            <span
+            <span data-i18n="hero.badge"
                 class="inline-block px-3 py-1 rounded-full bg-[#22d3ee]/10 text-[#22d3ee] text-xs font-bold uppercase tracking-widest mb-6 border border-[#22d3ee]/20">
                 Computer Sciences • Sustainable Group
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
+            
+            <h1 data-i18n="hero.title" class="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
                 Self Recyclable Trash Can
             </h1>
-            <p class="text-lg md:text-xl text-[#d1d5db] mb-10 leading-relaxed max-w-2xl mx-auto">
+            
+            <p data-i18n="hero.description" class="text-lg md:text-xl text-[#d1d5db] mb-10 leading-relaxed max-w-2xl mx-auto">
                 An intelligent prototype designed for automatic identification and sorting of recyclables using low-latency sensors and Arduino logic.
             </p>
+
             <div class="flex flex-wrap justify-center gap-3">
                 <span class="px-4 py-1.5 bg-[#1f2937] border border-gray-700 rounded-lg text-sm font-semibold flex items-center gap-2 text-white">
-                    <i class="fas fa-terminal text-[#22d3ee]"></i> Arduino Uno
+                    <i class="fas fa-terminal text-[#22d3ee]"></i> 
+                    <span data-i18n="hero.tags.arduino">Arduino Uno</span>
                 </span>
                 <span class="px-4 py-1.5 bg-[#1f2937] border border-gray-700 rounded-lg text-sm font-semibold flex items-center gap-2 text-white">
-                    <i class="fas fa-satellite-dish text-[#22d3ee]"></i> TCS230 Sensor
+                    <i class="fas fa-satellite-dish text-[#22d3ee]"></i> 
+                    <span data-i18n="hero.tags.sensor">TCS230 Sensor</span>
                 </span>
                 <span class="px-4 py-1.5 bg-[#1f2937] border border-gray-700 rounded-lg text-sm font-semibold flex items-center gap-2 text-white">
-                    <i class="fas fa-code text-[#22d3ee]"></i> C++ / Embedded
+                    <i class="fas fa-code text-[#22d3ee]"></i> 
+                    <span data-i18n="hero.tags.embedded">C++ / Embedded</span>
                 </span>
                 <span class="px-4 py-1.5 bg-[#1f2937] border border-gray-700 rounded-lg text-sm font-semibold flex items-center gap-2 text-white">
-                    <i class="fas fa-robot text-[#22d3ee]"></i> Automation
+                    <i class="fas fa-robot text-[#22d3ee]"></i> 
+                    <span data-i18n="hero.tags.automation">Automation</span>
                 </span>
             </div>
         </div>
     </header>
 
+    <!-- Overview Section -->
     <section id="overview" class="py-24 px-6 max-w-5xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16 items-start">
             <div>
-                <h2 class="text-3xl font-bold text-white mb-6">Problem & Tech Solution</h2>
+                <h2 data-i18n="overview.title" class="text-3xl font-bold text-white mb-6">Problem & Tech Solution</h2>
                 <div class="space-y-6 text-[#d1d5db] leading-relaxed">
-                    <p>
+                    <p data-i18n="overview.p1">
                         Solid waste production is constantly growing. Despite awareness campaigns, the difficulty of proper sorting results in the waste of recyclable materials and increases environmental impact.
                     </p>
-                    <p>
+                    <p data-i18n="overview.p2">
                         The core challenge was to replace complex computer vision with an efficient, cost-effective hardware solution. This system utilizes <strong>light-frequency analysis</strong> to distinguish materials, making the process practical and preventing common disposal errors.
                     </p>
-                    <p class="text-sm border-l-2 border-[#22d3ee] pl-4 italic">
+                    <p data-i18n="overview.p3" class="text-sm border-l-2 border-[#22d3ee] pl-4 italic">
                         By focusing on color-coded waste streams, we achieved a response time of less than 500ms for material categorization.
                     </p>
                 </div>
@@ -106,20 +116,20 @@
                 <div class="absolute -top-12 -right-12 w-32 h-32 bg-[#22d3ee]/5 blur-[60px]"></div>
 
                 <h3 class="text-[#22d3ee] font-bold mb-6 flex items-center gap-2 uppercase text-xs tracking-widest">
-                    <i class="fas fa-bullseye"></i> Core Objectives
+                    <i class="fas fa-bullseye"></i> <span data-i18n="overview.objectives.title">Core Objectives</span>
                 </h3>
                 <ul class="space-y-5 text-sm">
                     <li class="flex gap-4">
                         <i class="fas fa-check text-[#22d3ee] mt-1"></i>
-                        <span>Automatically separate metal, paper, and plastic in real-time.</span>
+                        <span data-i18n="overview.objectives.obj1">Automatically separate metal, paper, and plastic in real-time.</span>
                     </li>
                     <li class="flex gap-4">
                         <i class="fas fa-check text-[#22d3ee] mt-1"></i>
-                        <span>Propose a low-cost, modular hardware solution for domestic or community use.</span>
+                        <span data-i18n="overview.objectives.obj2">Propose a low-cost, modular hardware solution for domestic or community use.</span>
                     </li>
                     <li class="flex gap-4">
                         <i class="fas fa-check text-[#22d3ee] mt-1"></i>
-                        <span>Track and count materials (Serial Logging) for integration with public incentive systems.</span>
+                        <span data-i18n="overview.objectives.obj3">Track and count materials (Serial Logging) for integration with public incentive systems.</span>
                     </li>
                 </ul>
             </div>
@@ -129,10 +139,9 @@
     <!-- Live Demo Section -->
     <section id="demo" class="py-24 px-6 bg-[#1f2937]/30 border-y border-gray-800">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-16 text-center">Technical Preview</h2>
+            <h2 data-i18n="demo.title" class="text-3xl font-bold text-white mb-16 text-center">Technical Preview</h2>
             
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Mobile Mockup Cold Tech -->
                 <div class="flex justify-center">
                     <div class="relative w-[280px] h-[560px] border-[10px] border-[#374151] rounded-[3rem] shadow-2xl bg-[#111827] overflow-hidden">
                         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-[#374151] rounded-b-2xl z-10"></div>
@@ -141,7 +150,7 @@
                         </video>
                         <div class="absolute bottom-10 left-0 right-0 px-6">
                             <div class="bg-[#22d3ee]/10 backdrop-blur-md border border-[#22d3ee]/30 py-3 rounded-xl text-center">
-                                <p class="text-[10px] font-bold text-[#22d3ee] uppercase tracking-[0.2em]">Prototype_Active</p>
+                                <p data-i18n="demo.video_label" class="text-[10px] font-bold text-[#22d3ee] uppercase tracking-[0.2em]">Prototype_Active</p>
                             </div>
                         </div>
                     </div>
@@ -152,8 +161,8 @@
                         <img src="img/img-project.jpg" alt="Hardware" class="w-full h-auto object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#111827] to-transparent flex items-end p-8">
                             <div>
-                                <p class="text-[#22d3ee] text-xs font-mono">Hardware Setup</p>
-                                <h3 class="text-white text-xl font-bold">Physical Build</h3>
+                                <p data-i18n="demo.hardware_label" class="text-[#22d3ee] text-xs font-mono">Hardware Setup</p>
+                                <h3 data-i18n="demo.physical_build" class="text-white text-xl font-bold">Physical Build</h3>
                             </div>
                         </div>
                     </div>
@@ -161,13 +170,13 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="p-6 bg-[#1f2937] border border-gray-700 rounded-xl">
                             <i class="fas fa-microchip text-[#22d3ee] mb-3 text-xl"></i>
-                            <h4 class="text-white font-bold text-sm">C++ Logic</h4>
-                            <p class="text-[#d1d5db] text-xs mt-1">Optimized interrupts for sensor reading.</p>
+                            <h4 data-i18n="demo.cards.cpp_title" class="text-white font-bold text-sm">C++ Logic</h4>
+                            <p data-i18n="demo.cards.cpp_desc" class="text-[#d1d5db] text-xs mt-1">Optimized interrupts for sensor reading.</p>
                         </div>
                         <div class="p-6 bg-[#1f2937] border border-gray-700 rounded-xl">
                             <i class="fas fa-bolt text-[#22d3ee] mb-3 text-xl"></i>
-                            <h4 class="text-white font-bold text-sm">Servo Control</h4>
-                            <p class="text-[#d1d5db] text-xs mt-1">PWM-driven material routing.</p>
+                            <h4 data-i18n="demo.cards.servo_title" class="text-white font-bold text-sm">Servo Control</h4>
+                            <p data-i18n="demo.cards.servo_desc" class="text-[#d1d5db] text-xs mt-1">PWM-driven material routing.</p>
                         </div>
                     </div>
                 </div>
@@ -175,9 +184,10 @@
         </div>
     </section>
 
+    <!-- Methodology Section -->
     <section id="methodology" class="py-24 px-6 border-t border-gray-800">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-16 text-center">Development Workflow</h2>
+            <h2 data-i18n="methodology.title" class="text-3xl font-bold text-white mb-16 text-center">Development Workflow</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 
                 <div class="p-8 bg-[#1f2937]/50 rounded-2xl border border-gray-700 relative group overflow-hidden">
@@ -187,8 +197,8 @@
                         <i class="fas fa-lightbulb text-xl"></i>
                     </div>
 
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Ideation & Pivot</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                    <h3 data-i18n="methodology.steps.step1_title" class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Ideation & Pivot</h3>
+                    <p data-i18n="methodology.steps.step1_desc" class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
                         Initially planned with AI via camera, the project pivoted to <strong>TCS230 Color Sensors</strong> to ensure technical feasibility and near-instant response times.
                     </p>
                 </div>
@@ -200,8 +210,8 @@
                         <i class="fas fa-drafting-compass text-xl"></i>
                     </div>
 
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Mechanical Structure</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                    <h3 data-i18n="methodology.steps.step2_title" class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Mechanical Structure</h3>
+                    <p data-i18n="methodology.steps.step2_desc" class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
                         Development of a <strong>gravity-assisted inclined ramp</strong>. This design ensures consistent material positioning for accurate readings.
                     </p>
                 </div>
@@ -213,8 +223,8 @@
                         <i class="fas fa-microchip text-xl"></i>
                     </div>
 
-                    <h3 class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Logic & Sorting</h3>
-                    <p class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
+                    <h3 data-i18n="methodology.steps.step3_title" class="text-[#22d3ee] font-bold text-xs uppercase mb-4 tracking-widest relative z-10">Logic & Sorting</h3>
+                    <p data-i18n="methodology.steps.step3_desc" class="text-[#d1d5db] text-sm leading-relaxed relative z-10">
                         The system maps RGB values. Arduino then triggers <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input.
                     </p>
                 </div>
@@ -226,7 +236,7 @@
     <!-- Results Section -->
     <section id="results" class="py-24 px-6 border-t border-gray-800 bg-[#111827]">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-16 text-center">
+            <h2 data-i18n="results.title" class="text-3xl font-bold text-white mb-16 text-center">
                 Key Results & Social Impact
             </h2>
             
@@ -238,8 +248,8 @@
                             <i class="fas fa-calculator text-xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-2">Integrated Tracking Software</h4>
-                            <p class="text-[#d1d5db] leading-relaxed text-sm">
+                            <h4 data-i18n="results.items.software_title" class="text-white font-bold text-lg mb-2">Integrated Tracking Software</h4>
+                            <p data-i18n="results.items.software_desc" class="text-[#d1d5db] leading-relaxed text-sm">
                                 Implementation of a real-time system that records every item processed (metals, plastics), allowing precise monitoring of recycling efficiency via Arduino serial/data logs.
                             </p>
                         </div>
@@ -250,8 +260,8 @@
                             <i class="fas fa-users text-xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-2">Municipal & Social Integration</h4>
-                            <p class="text-[#d1d5db] leading-relaxed text-sm">
+                            <h4 data-i18n="results.items.social_title" class="text-white font-bold text-lg mb-2">Municipal & Social Integration</h4>
+                            <p data-i18n="results.items.social_desc" class="text-[#d1d5db] leading-relaxed text-sm">
                                 A gamified proposal where neighborhoods reaching recycling goals trigger social rewards, such as wheelchair donations or community cultural events supported by local partners.
                             </p>
                         </div>
@@ -262,29 +272,31 @@
                     <div class="absolute -top-24 -right-24 w-48 h-48 bg-[#22d3ee]/5 blur-[80px]"></div>
                     
                     <h4 class="text-white font-bold text-xl mb-8 flex items-center gap-3">
-                        <i class="fas fa-rocket text-[#22d3ee]"></i> Scalability & Future Vision
+                        <i class="fas fa-rocket text-[#22d3ee]"></i> <span data-i18n="results.items.scale_title">Scalability & Future Vision</span>
                     </h4>
                     
                     <ul class="space-y-6">
                         <li class="flex gap-4">
-                            <i class="fas fa-brain text-[#22d3ee] mt-1 text-sm"></i>
+                            <i class="fas fa-microchip text-[#22d3ee] mt-1 text-sm"></i>
                             <div>
-                                <p class="text-white font-semibold text-sm">Java-Based Dashboard</p>
-                                <p class="text-[#d1d5db] text-xs mt-1">Developing a robust desktop dashboard in Java to monitor city-wide waste distribution and sensor health.</p>
+                                <p data-i18n="results.items.cpp_title" class="text-white font-semibold text-sm">C++ Logic Control</p>
+                                <p data-i18n="results.items.cpp_desc" class="text-[#d1d5db] text-xs mt-1">
+                                    Implementing real-time signal processing in C++ to interpret sensor data and coordinate high-precision sorting mechanisms.
+                                </p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <i class="fas fa-mobile-alt text-[#22d3ee] mt-1 text-sm"></i>
                             <div>
-                                <p class="text-white font-semibold text-sm">Mobile App & Bluetooth</p>
-                                <p class="text-[#d1d5db] text-xs mt-1">Integration with a dedicated Android app for citizens to track their "Environmental Score" via Bluetooth/WiFi.</p>
+                                <p data-i18n="results.items.mobile_title" class="text-white font-semibold text-sm">Mobile App & Bluetooth</p>
+                                <p data-i18n="results.items.mobile_desc" class="text-[#d1d5db] text-xs mt-1">Integration with a dedicated Android app for citizens to track their "Environmental Score" via Bluetooth/WiFi.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <i class="fas fa-solar-panel text-[#22d3ee] mt-1 text-sm"></i>
                             <div>
-                                <p class="text-white font-semibold text-sm">Energy Autonomy</p>
-                                <p class="text-[#d1d5db] text-xs mt-1">Implementation of solar panels to ensure 100% sustainable operation in public squares and schools.</p>
+                                <p data-i18n="results.items.solar_title" class="text-white font-semibold text-sm">Energy Autonomy</p>
+                                <p data-i18n="results.items.solar_desc" class="text-[#d1d5db] text-xs mt-1">Implementation of solar panels to ensure 100% sustainable operation in public squares and schools.</p>
                             </div>
                         </li>
                     </ul>
@@ -295,7 +307,7 @@
 
     <!-- Footer -->
     <footer class="py-12 border-t border-gray-800 text-center bg-[#111827]">
-        <p class="text-gray-500 text-xs font-mono uppercase tracking-widest">
+        <p data-i18n="footer.copyright" class="text-gray-500 text-xs font-mono uppercase tracking-widest">
             &copy; 2024 • Developed for the Computer Science Academic Report.
         </p>
     </footer>

@@ -8,7 +8,7 @@
   },
   "hero": {
     "status": "Disponível para oportunidades",
-    "title": "Olá, eu sou o <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-blue-400\">Edson Xavier</span>.",
+    "title": "Olá, <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-blue-400\">Edson Xavier</span> aqui.",
     "description": "Estudante de Ciência da Computação dedicado à engenharia de software, com experiência em Java, Android Studio e gerenciamento de banco de dados.",
     "btn_work": "Ver Meus Projetos",
     "btn_contact": "Vamos Conversar"

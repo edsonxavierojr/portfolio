@@ -14,14 +14,16 @@
     "title": "Lixeira Auto-Reciclável",
     "description": "Um protótipo inteligente projetado para identificação e separação automática de recicláveis usando sensores de baixa latência e lógica Arduino.",
     "tags": {
+      "arduino": "Arduino Uno",
+      "sensor": "Sensor TCS230",
       "embedded": "C++ / Embarcado",
       "automation": "Automação"
     }
   },
   "overview": {
-    "title": "Problema e Solução Tecnológica",
+    "title": "Problema & Solução Tecnológica",
     "p1": "A produção de resíduos sólidos está em constante crescimento. Apesar das campanhas de conscientização, a dificuldade da triagem adequada resulta no desperdício de materiais recicláveis e aumenta o impacto ambiental.",
-    "p2": "O principal desafio foi substituir uma visão computacional complexa por uma solução de hardware eficiente e econômica. Este sistema utiliza a análise de frequência de luz para distinguir materiais, tornando o processo prático e evitando erros comuns de descarte.",
+    "p2": "O principal desafio foi substituir uma visão computacional complexa por uma solução de hardware eficiente e econômica. Este sistema utiliza a <strong>análise de frequência de luz</strong> para distinguir materiais, tornando o processo prático e evitando erros comuns de descarte.",
     "p3": "Focando em fluxos de resíduos codificados por cores, alcançamos um tempo de resposta de menos de 500ms para a categorização de materiais.",
     "objectives": {
       "title": "Objetivos Principais",
@@ -45,25 +47,25 @@
   "methodology": {
     "title": "Fluxo de Desenvolvimento",
     "steps": {
-      "step1_title": "Ideação e Pivô",
-      "step1_desc": "Inicialmente planejado com IA via câmera, o projeto pivotou para Sensores de Cor TCS230 para garantir viabilidade técnica e tempos de resposta quase instantâneos.",
+      "step1_title": "Ideação & Pivô",
+      "step1_desc": "Inicialmente planejado com IA via câmera, o projeto pivotou para <strong>Sensores de Cor TCS230</strong> para garantir viabilidade técnica e tempos de resposta quase instantâneos.",
       "step2_title": "Estrutura Mecânica",
-      "step2_desc": "Desenvolvimento de uma rampa inclinada assistida por gravidade. Este design garante o posicionamento consistente do material para leituras precisas.",
+      "step2_desc": "Desenvolvimento de uma <strong>rampa inclinada assistida por gravidade</strong>. Este design garante o posicionamento consistente do material para leituras precisas.",
       "step3_title": "Lógica e Separação",
-      "step3_desc": "O sistema mapeia valores RGB. O Arduino então aciona Servos Duplos para redirecionar o resíduo para a lixeira correta com zero intervenção manual."
+      "step3_desc": "O sistema mapeia valores RGB. O Arduino então aciona <strong>Servos Duplos</strong> para redirecionar o resíduo para a lixeira correta com zero intervenção manual."
     }
   },
   "results": {
-    "title": "Principais Resultados e Impacto Social",
+    "title": "Principais Resultados & Impacto Social",
     "items": {
       "software_title": "Software de Rastreamento Integrado",
       "software_desc": "Implementação de um sistema em tempo real que registra cada item processado (metais, plásticos), permitindo um monitoramento preciso da eficiência da reciclagem via logs de dados/serial do Arduino.",
-      "social_title": "Integração Municipal e Social",
+      "social_title": "Integração Municipal & Social",
       "social_desc": "Uma proposta gamificada onde bairros que atingem metas de reciclagem acionam recompensas sociais, como doações de cadeiras de rodas ou eventos culturais comunitários apoiados por parceiros locais.",
       "scale_title": "Escalabilidade e Visão de Futuro",
-      "java_title": "Dashboard baseado em C++",
-      "java_desc": "Desenvolvimento de um dashboard desktop robusto em C++ para monitorar a distribuição de resíduos e a saúde dos sensores em toda a cidade.",
-      "mobile_title": "App Mobile e Bluetooth",
+      "cpp_title": "Dashboard baseado em C++",
+      "cpp_desc": "Desenvolvimento de um dashboard desktop robusto em C++ para monitorar a distribuição de resíduos e a saúde dos sensores em toda a cidade.",
+      "mobile_title": "App Mobile & Bluetooth",
       "mobile_desc": "Integração com um app Android dedicado para os cidadãos acompanharem sua \"Pontuação Ambiental\" via Bluetooth/WiFi.",
       "solar_title": "Autonomia Energética",
       "solar_desc": "Implementação de painéis solares para garantir operação 100% sustentável em praças públicas e escolas."
