@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "logo": "Meu Portfólio",
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre mim",
+    "contact": "Contato"
+  },
+  "hero": {
+    "status": "Disponível para oportunidades",
+    "title": "Olá, <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-blue-400\">Edson Xavier</span> aqui.",
+    "description": "Estudante de Ciência da Computação dedicado à engenharia de software, com experiência em Java, Android Studio e gerenciamento de banco de dados.",
+    "btn_work": "Ver Meus Projetos",
+    "btn_contact": "Vamos Conversar"
+  },
+  "projects": {
+    "title": "Projetos",
+    "trashcan": {
+      "title": "Lixeira Auto-Reciclável",
+      "description": "Um protótipo baseado em Arduino que automatiza a identificação e separação de recicláveis por meio de sensores de cor.",
+      "tags": {
+        "arduino": "Arduino",
+        "cpp": "C++ / Wiring",
+        "sensors": "Sensores (Cor/IR)",
+        "iot": "IoT (Internet das Coisas)",
+        "embedded": "Sistemas Embarcados",
+        "automation": "Automação"
+      },
+      "link": "Ver Projeto"
+    }
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "p1": "Sou estudante de Ciência da Computação na <span class=\"text-[#22d3ee] font-semibold\">UniFAJ</span>, atualmente focado em consolidar fundamentos sólidos para iniciar minha trajetória profissional. Tenho concentrado meus estudos no <span class=\"text-white font-semibold\">ecossistema Java</span>, desenvolvendo projetos acadêmicos que envolvem lógica de backend e bancos de dados relacionais, sempre buscando aplicar boas práticas como <span class=\"text-white font-semibold\">modelagem UML</span>.",
+    "p2": "No desenvolvimento mobile, estou explorando as capacidades do <span class=\"text-[#22d3ee] font-semibold\">Android Nativo</span>. Através do Android Studio, busco entender o ciclo de vida das aplicações e a importância de criar interfaces funcionais combinadas com um código organizado.",
+    "p3": "Além da faculdade, dedico tempo para aprender sobre infraestrutura e produtividade, configurando ambientes com <span class=\"text-white font-semibold\">Docker e WSL</span>. Meu objetivo é encontrar uma oportunidade onde eu possa aplicar esse conhecimento técnico inicial e evoluir junto a uma equipe de engenharia de software."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-mail",
+    "footer_built": "Desenvolvido com Tailwind CSS & Lucide."
+  }
+}

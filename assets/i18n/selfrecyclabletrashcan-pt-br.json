@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "system_case": "Estudo de Caso do Sistema",
+    "see_github": "Ver no GitHub",
+    "back": "Voltar",
+    "home": "Início",
+    "overview": "Visão Geral",
+    "media": "Mídia",
+    "methodology": "Metodologia",
+    "results": "Resultados"
+  },
+  "hero": {
+    "badge": "Ciência da Computação • Grupo Sustentável",
+    "title": "Lixeira Auto-Reciclável",
+    "description": "Um protótipo inteligente projetado para identificação e separação automática de recicláveis usando sensores de baixa latência e lógica Arduino.",
+    "tags": {
+      "arduino": "Arduino Uno",
+      "sensor": "Sensor TCS230",
+      "embedded": "C++ / Embarcado",
+      "automation": "Automação"
+    }
+  },
+  "overview": {
+    "title": "Problema & Solução Tecnológica",
+    "p1": "A produção de resíduos sólidos está em constante crescimento. Apesar das campanhas de conscientização, a dificuldade da triagem adequada resulta no desperdício de materiais recicláveis e aumenta o impacto ambiental.",
+    "p2": "O principal desafio foi substituir uma visão computacional complexa por uma solução de hardware eficiente e econômica. Este sistema utiliza a <strong>análise de frequência de luz</strong> para distinguir materiais, tornando o processo prático e evitando erros comuns de descarte.",
+    "p3": "Focando em fluxos de resíduos codificados por cores, alcançamos um tempo de resposta de menos de 500ms para a categorização de materiais.",
+    "objectives": {
+      "title": "Objetivos Principais",
+      "obj1": "Separar automaticamente metal, papel e plástico em tempo real.",
+      "obj2": "Propor uma solução de hardware modular e de baixo custo para uso doméstico ou comunitário.",
+      "obj3": "Rastrear e contar materiais (Serial Logging) para integração com sistemas de incentivo público."
+    }
+  },
+  "demo": {
+    "title": "Prévia Técnica",
+    "video_label": "Protótipo_Ativo",
+    "hardware_label": "Configuração de Hardware",
+    "physical_build": "Construção Física",
+    "cards": {
+      "cpp_title": "Lógica C++",
+      "cpp_desc": "Interrupções otimizadas para leitura do sensor.",
+      "servo_title": "Controle de Servo",
+      "servo_desc": "Roteamento de material acionado por PWM."
+    }
+  },
+  "methodology": {
+    "title": "Fluxo de Desenvolvimento",
+    "steps": {
+      "step1_title": "Ideação & Pivô",
+      "step1_desc": "Inicialmente planejado com IA via câmera, o projeto pivotou para <strong>Sensores de Cor TCS230</strong> para garantir viabilidade técnica e tempos de resposta quase instantâneos.",
+      "step2_title": "Estrutura Mecânica",
+      "step2_desc": "Desenvolvimento de uma <strong>rampa inclinada assistida por gravidade</strong>. Este design garante o posicionamento consistente do material para leituras precisas.",
+      "step3_title": "Lógica e Separação",
+      "step3_desc": "O sistema mapeia valores RGB. O Arduino então aciona <strong>Servos Duplos</strong> para redirecionar o resíduo para a lixeira correta com zero intervenção manual."
+    }
+  },
+  "results": {
+    "title": "Principais Resultados & Impacto Social",
+    "items": {
+      "software_title": "Software de Rastreamento Integrado",
+      "software_desc": "Implementação de um sistema em tempo real que registra cada item processado (metais, plásticos), permitindo um monitoramento preciso da eficiência da reciclagem via logs de dados/serial do Arduino.",
+      "social_title": "Integração Municipal & Social",
+      "social_desc": "Uma proposta gamificada onde bairros que atingem metas de reciclagem acionam recompensas sociais, como doações de cadeiras de rodas ou eventos culturais comunitários apoiados por parceiros locais.",
+      "scale_title": "Escalabilidade e Visão de Futuro",
+      "cpp_title": "Dashboard baseado em C++",
+      "cpp_desc": "Desenvolvimento de um dashboard desktop robusto em C++ para monitorar a distribuição de resíduos e a saúde dos sensores em toda a cidade.",
+      "mobile_title": "App Mobile & Bluetooth",
+      "mobile_desc": "Integração com um app Android dedicado para os cidadãos acompanharem sua \"Pontuação Ambiental\" via Bluetooth/WiFi.",
+      "solar_title": "Autonomia Energética",
+      "solar_desc": "Implementação de painéis solares para garantir operação 100% sustentável em praças públicas e escolas."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 • Desenvolvido para o Relatório Acadêmico de Ciência da Computação."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "system_case": "System Case Study",
+    "see_github": "See in GitHub",
+    "back": "Back",
+    "home": "Home",
+    "overview": "Overview",
+    "media": "Media",
+    "methodology": "Methodology",
+    "results": "Results"
+  },
+  "hero": {
+    "badge": "Computer Sciences • Sustainable Group",
+    "title": "Self Recyclable Trash Can",
+    "description": "An intelligent prototype designed for automatic identification and sorting of recyclables using low-latency sensors and Arduino logic.",
+    "tags": {
+      "arduino": "Arduino Uno",
+      "sensor": "TCS230 Sensor",
+      "embedded": "C++ / Embedded",
+      "automation": "Automation"
+    }
+  },
+  "overview": {
+    "title": "Problem & Tech Solution", 
+    "p1": "Solid waste production is constantly growing. Despite awareness campaigns, the difficulty of proper sorting results in the waste of recyclable materials and increases environmental impact.",
+    "p2": "The core challenge was to replace complex computer vision with an efficient, cost-effective hardware solution. This system utilizes <strong>light-frequency analysis</strong> to distinguish materials, making the process practical and preventing common disposal errors.",
+    "p3": "By focusing on color-coded waste streams, we achieved a response time of less than 500ms for material categorization.",
+    "objectives": {
+      "title": "Core Objectives",
+      "obj1": "Automatically separate metal, paper, and plastic in real-time.",
+      "obj2": "Propose a low-cost, modular hardware solution for domestic or community use.",
+      "obj3": "Track and count materials (Serial Logging) for integration with public incentive systems."
+    }
+  },
+  "demo": {
+    "title": "Technical Preview",
+    "video_label": "Prototype_Active",
+    "hardware_label": "Hardware Setup",
+    "physical_build": "Physical Build",
+    "cards": {
+      "cpp_title": "C++ Logic",
+      "cpp_desc": "Optimized interrupts for sensor reading.",
+      "servo_title": "Servo Control",
+      "servo_desc": "PWM-driven material routing."
+    }
+  },
+  "methodology": {
+    "title": "Development Workflow",
+    "steps": {
+      "step1_title": "Ideation & Pivot",
+      "step1_desc": "Initially planned with AI via camera, the project pivoted to <strong>TCS230 Color Sensors</strong> to ensure technical feasibility and near-instant response times.",
+      "step2_title": "Mechanical Structure",
+      "step2_desc": "Development of a <strong>gravity-assisted inclined ramp</strong>. This design ensures consistent material positioning for accurate readings.",
+      "step3_title": "Logic & Sorting",
+      "step3_desc": "The system maps RGB values. Arduino then triggers <strong>Dual-Servos</strong> to redirect the waste to the correct bin with zero manual input."
+    }
+  },
+  "results": {
+    "title": "Key Results & Social Impact",
+    "items": {
+      "software_title": "Integrated Tracking Software",
+      "software_desc": "Implementation of a real-time system that records every item processed (metals, plastics), allowing precise monitoring of recycling efficiency via Arduino serial/data logs.",
+      "social_title": "Municipal & Social Integration",
+      "social_desc": "A gamified proposal where neighborhoods reaching recycling goals trigger social rewards, such as wheelchair donations or community cultural events supported by local partners.",
+      "scale_title": "Scalability & Future Vision",
+      "java_title": "C++ based Dashboard",
+      "java_desc": "Developing a robust desktop dashboard in C++ to monitor city-wide waste distribution and sensor health.",
+      "mobile_title": "Mobile App & Bluetooth",
+      "mobile_desc": "Integration with a dedicated Android app for citizens to track their \"Environmental Score\" via Bluetooth/WiFi.",
+      "solar_title": "Energy Autonomy",
+      "solar_desc": "Implementation of solar panels to ensure 100% sustainable operation in public squares and schools."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 • Developed for the Computer Science Academic Report."
+  }
+}
