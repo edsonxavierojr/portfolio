@@ -2,7 +2,7 @@
 
 ### Java & Android Specialist | Computer Science Student @ UniFAJ
 
-Este repositório contém o código-fonte do meu portfólio profissional, focado em demonstrar competências em engenharia de software, arquitetura de sistemas e integração com hardware. O projeto utiliza uma estética **Cold Tech** para apresentar soluções de alto desempenho e otimização técnica.
+Este repositório contém o código-fonte do meu portfólio profissional, focado em demonstrar competências em engenharia de software, arquitetura de sistemas e integração com hardware.
 
 ## 🛠️ Tecnologias & Ferramentas
 * **Linguagens:** Java, C++, SQL.
