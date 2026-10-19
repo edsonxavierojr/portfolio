@@ -1,5 +1,7 @@
+document.documentElement.classList.add('i18n-loading');
+
 async function applyLanguage(lang) {
-    // 1. Salva a preferência para as próximas páginas
+    document.documentElement.classList.add('i18n-loading');
     localStorage.setItem('preferredLang', lang);
 
     try {
@@ -23,23 +25,19 @@ async function applyLanguage(lang) {
         
         document.documentElement.lang = lang === 'pt-br' ? 'pt-BR' : 'en';
         
-        // 2. Mostra o body apenas após a tradução (opcional, evita o flash)
-        document.body.style.visibility = 'visible';
+        document.documentElement.classList.remove('i18n-loading');
 
     } catch (error) {
         console.error("Erro ao carregar o arquivo de idioma:", error);
-        document.body.style.visibility = 'visible';
+        document.documentElement.classList.remove('i18n-loading');
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Esconde o body inicialmente para evitar o erro visual de duplicidade
-    document.body.style.visibility = 'hidden';
 
-    // 3. Tenta primeiro o LocalStorage, depois o navegador
     const savedLang = localStorage.getItem('preferredLang');
     const userLanguage = navigator.language || navigator.userLanguage;
     const defaultLang = savedLang || (userLanguage.toLowerCase().startsWith('pt') ? 'pt-br' : 'en');
-    
+
     applyLanguage(defaultLang);
 });
