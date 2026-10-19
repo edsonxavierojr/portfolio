@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Este repositório contém o código-fonte do meu portfólio profissional, focado em demonstrar competências em engenharia de software, arquitetura de sistemas e integração com hardware. O projeto utiliza uma estética **Cold Tech** para apresentar soluções de alto desempenho e otimização técnica.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsonxavierojr/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/edsonxavierojr/portfolio/issues"
+  },
+  "homepage": "https://github.com/edsonxavierojr/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
